@@ -1,0 +1,26 @@
+@import url('../user/__avatar/user__avatar.css');
+@import url('../user/__paragraph/user__paragraph.css');
+@import url('../user/__name/user__name.css');
+@import url('../user/__edit/user__edit.css');
+@import url('../user/__status/user__status.css');
+@import url('../user/__status-text/user__status-text.css');
+@import url('../user/__button/user__button.css');
+@import url('../user/__button/_edit-status/user__button_edit-status.css');
+@import url('../user/__about/user__about.css');
+@import url('../user/__age/user__age.css');
+@import url('../user/__hobby/user__hobby.css');
+@import url('../user/__job/user__job.css');
+@import url('../user/__add-story/user__add-story.css');
+@import url('../user/__stories/user__stories.css');
+@import url('../user/__friends/user__friends.css');
+
+.user {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1.5fr;
+  grid-template-areas:
+    "avatar name name"
+    "avatar status status"
+    "edit status status"
+    "about stories friends";
+  padding: 150px 100px 0;
+}

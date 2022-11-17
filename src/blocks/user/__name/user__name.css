@@ -1,0 +1,4 @@
+.user__name {
+  grid-area: name;
+  margin: 0;
+}

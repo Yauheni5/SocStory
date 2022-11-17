@@ -1,0 +1,5 @@
+.user__status {
+  display: flex;
+  justify-content: start;
+  grid-area: status;
+}

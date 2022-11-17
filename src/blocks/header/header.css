@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  position: fixed;
+  padding: 20px 10%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 60px;
+  background-color: #B5B8B1;
+  box-shadow: 15px 15px 15px 15px rgba(70, 68, 81, .6);
+  z-index: 20;
+}

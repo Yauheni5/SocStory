@@ -1,0 +1,21 @@
+.logo {
+  padding: 10px;
+  text-decoration: none;
+  width: 250px;
+  height: 60px;
+  font-size: 30px;
+  color: #c3225b;
+  background-image: url('../../images/logoSocStory.png');
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: 35%;
+  cursor: pointer;
+  box-shadow: 15px 15px 15px 15px rgba(70, 68, 81, .3);
+  border-radius: 10px;
+  transition: all .5s linear;
+}
+
+.logo:hover {
+  opacity: .5;
+  scale: 1.1;
+}

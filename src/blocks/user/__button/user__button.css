@@ -2,4 +2,13 @@
   display: block;
   margin: 0;
   padding: 0;
+  border: 1px solid grey;
+  transition: all .5s linear;
+  cursor: pointer;
+}
+
+.user__button:hover {
+  opacity: .7;
+  background-color: gray;
+  scale: 1.2;
 }

@@ -13,12 +13,15 @@ function App() {
       .then((response) => response.json())
       .then((res) =>
         res.results.map((item) => {
+          console.log(item)
           const firstName = item.name.first;
           const lastName = item.name.last;
           const userEmail = item.email;
           const userAvatar = item.picture;
           const userPhone = item.phone;
           const userId = item.login.uuid;
+          const userLocation = item.location;
+
           const userData = {
             firstName,
             lastName,
@@ -26,6 +29,7 @@ function App() {
             userAvatar,
             userPhone,
             userId,
+            userLocation
           };
           return setUsersArray((usersArray) => [...usersArray, { userData }]);
         })
@@ -40,8 +44,8 @@ function App() {
     <div className="body">
       <div className="page">
         <Header />
-        <Main dataUser={user} />
-        <Users usersArray={usersArray} />
+        <Main dataUser={user} usersArray={usersArray}/>
+
       </div>
     </div>
   );

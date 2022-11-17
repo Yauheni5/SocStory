@@ -1,3 +1,7 @@
 .user__add-story {
   grid-area: add-story;
+  align-self: flex-end;
+  font-size: 20px;
+  background-color: inherit;
+  padding: 10px;
 }

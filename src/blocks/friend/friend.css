@@ -1,0 +1,10 @@
+@import url('../friend/__name/friend__name.css');
+@import url('../friend/__avatar/friend__avatar.css');
+@import url('../friend/__letter/friend__letter.css');
+
+.friend {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

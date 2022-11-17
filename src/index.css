@@ -10,9 +10,14 @@
 
 @import url('../src/blocks/user/user.css');
 
-p,
+@import url('../src/blocks/cards-friends/cards-friends.css');
+
+@import url('../src/blocks/friend/friend.css');
+
+/* p,
 a,
 div,
 img {
   border: 1px red solid;
 }
+ */

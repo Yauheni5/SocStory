@@ -16,6 +16,6 @@
 }
 
 .logo:hover {
-  opacity: .5;
   scale: 1.1;
+  background-color: grey;
 }

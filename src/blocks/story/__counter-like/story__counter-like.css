@@ -1,6 +1,6 @@
 .story__counter-like {
-  grid-area: counter-like;
-  justify-self: end;
+  grid-area: like;
+  justify-self: start;
   align-self: center;
-  margin: 0;
+  margin: 0 0 0 40px;
 }

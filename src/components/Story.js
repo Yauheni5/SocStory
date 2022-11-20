@@ -4,7 +4,6 @@ export default function Story({currentlyTime, userAvatarData}) {
   const [counterLike, setConterLike] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
 
-
   function handleClickLike(e){
     if (isLiked) {
       e.target.classList.remove("story__button-like_active");
@@ -29,7 +28,7 @@ export default function Story({currentlyTime, userAvatarData}) {
       />
       <p className="story__counter-like">{counterLike}</p>
       <button className="user__button story__button-reply"/>
-      <input type="text" placeholder="comment" className="user__input story__input" />
+      <input type="text" placeholder="comment" className="user__input story__input story__input_active" />
     </article>
   )
 }

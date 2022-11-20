@@ -15,6 +15,7 @@
 @import url('../user/__stories/user__stories.css');
 @import url('../user/__friends/user__friends.css');
 @import url('../user/__button-edit/_story/user__button-edit_story.css');
+@import url('../user/__button-edit/_status-save/user__button-edit_status-save.css');
 
 .user {
   display: grid;

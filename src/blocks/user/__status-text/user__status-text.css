@@ -1,4 +1,14 @@
 .user__status-text {
   font-style: italic;
   padding-left: 18px;
+  width: 90%;
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none;
+}
+
+.user__status-text:disabled {
+  border: none;
+  background-color: inherit;
 }

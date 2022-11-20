@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/project/static/css/main.e5ce2899.css",
+    "main.js": "/project/static/js/main.c4fa53df.js",
+    "static/js/787.ec704a7a.chunk.js": "/project/static/js/787.ec704a7a.chunk.js",
+    "static/media/logoSocStory.png": "/project/static/media/logoSocStory.d0f76ab1a6237387434a.png",
+    "static/media/pencil.svg": "/project/static/media/pencil.066b83c066aca090b8c4.svg",
+    "static/media/likeIcon.svg": "/project/static/media/likeIcon.d155ad62d32b51ba3d46.svg",
+    "static/media/deleteIcon.svg": "/project/static/media/deleteIcon.8a554a830c70c649c95d.svg",
+    "static/media/likeIcon-active.svg": "/project/static/media/likeIcon-active.86aebcb7f8c3ee4b001b.svg",
+    "index.html": "/project/index.html",
+    "static/media/okIcon.svg": "/project/static/media/okIcon.a6193360bdb9ac7f406c.svg",
+    "static/media/replyIcon.svg": "/project/static/media/replyIcon.6037f6b09e18e5f871b4.svg",
+    "main.e5ce2899.css.map": "/project/static/css/main.e5ce2899.css.map",
+    "main.c4fa53df.js.map": "/project/static/js/main.c4fa53df.js.map",
+    "787.ec704a7a.chunk.js.map": "/project/static/js/787.ec704a7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5ce2899.css",
+    "static/js/main.c4fa53df.js"
+  ]
+}

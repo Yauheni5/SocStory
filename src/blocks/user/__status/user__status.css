@@ -1,5 +1,5 @@
 .user__status {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   grid-area: status;
 }

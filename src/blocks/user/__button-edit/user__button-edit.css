@@ -1,0 +1,9 @@
+.user__button-edit {
+  background-color: inherit;
+  background-image: url('../../../images/pencil.svg');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 50%;
+  padding: 5px;
+  border-radius: 50%;
+}

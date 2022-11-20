@@ -1,13 +1,19 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
+import Stories from "./Stories";
 import Users from "./Users";
+import { currentlyTime } from "../utils/constants"
 
 export default function Main({ dataUser, usersArray }) {
+  const userAvatarData = {
+    src: "https://static.1tv.ru/uploads/photo/image/2/huge/4062_huge_876c41f50e.jpg",
+    alt: "user avatar",
+  }
   return (
     <main className="user">
       <img
-        src="https://static.1tv.ru/uploads/photo/image/2/huge/4062_huge_876c41f50e.jpg"
-        alt="user avatar"
+        src={userAvatarData.src}
+        alt={userAvatarData.alt}
         className="user__avatar"
       />
       <Route>
@@ -28,22 +34,14 @@ export default function Main({ dataUser, usersArray }) {
           hendrerit malesuada quam euismod a. Cras sed diam justo. Fusce eget
           efficitur nisi. Maecenas tincidunt ex eget mauris suscipit pulvinar.
         </p>
-        <button className="user__button user__button_edit-status" />
+        <button className="user__button user__button-edit user__button-edit_status" />
       </div>
       <div className="user__about">
         <p className="user__paragraph user__age">Age:</p>
         <p className="user__paragraph user__job">Job:</p>
         <p className="user__paragraph user__hobby">About:</p>
       </div>
-      <div className="user__stories">
-        <button className="user__button user__add-story">Add Story</button>
-        <article>
-          <h2>Title story</h2>
-          <p className="">Text story</p>
-          <button className="user__button">Like</button>
-          <input type="text" placeholder="comment" className="user__input" />
-        </article>
-      </div>
+      <Stories currentlyTime={currentlyTime} userAvatarData={userAvatarData}/>
       <Users usersArray={usersArray} />
     </main>
   );

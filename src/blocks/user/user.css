@@ -5,7 +5,8 @@
 @import url('../user/__edit/user__edit.css');
 @import url('../user/__status/user__status.css');
 @import url('../user/__status-text/user__status-text.css');
-@import url('../user/__button/_edit-status/user__button_edit-status.css');
+@import url('../user/__button-edit/user__button-edit.css');
+@import url('../user/__button-edit/_status/user__button-edit_status.css');
 @import url('../user/__about/user__about.css');
 @import url('../user/__age/user__age.css');
 @import url('../user/__hobby/user__hobby.css');
@@ -13,6 +14,7 @@
 @import url('../user/__add-story/user__add-story.css');
 @import url('../user/__stories/user__stories.css');
 @import url('../user/__friends/user__friends.css');
+@import url('../user/__button-edit/_story/user__button-edit_story.css');
 
 .user {
   display: grid;

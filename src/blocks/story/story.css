@@ -1,0 +1,22 @@
+@import url('../story/__avatar/story__avatar.css');
+@import url('../story/__input/story__input.css');
+@import url('../story/__text/story__text.css');
+@import url('../story/__button-delete/story__button-delete.css');
+@import url('../story/__button-edit/story__button-edit.css');
+@import url('../story/__button-like/story__button-like.css');
+@import url('../story/__button-like/_active/story__button-like_active.css');
+@import url('../story/__button-reply/story__button-reply.css');
+@import url('../story/__date/story__date.css');
+@import url('../story/__counter-like/story__counter-like.css');
+
+.story {
+  display: grid;
+  width: 100%;
+  gap: 10px;
+  grid-template-areas:
+    "date-story edit delete"
+    "avatar story-text story-text"
+    "counter-like like reply"
+    ". comment comment"
+  ;
+}

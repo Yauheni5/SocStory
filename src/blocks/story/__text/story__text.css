@@ -1,0 +1,6 @@
+.story__text {
+  grid-area: story-text;
+  margin: 0;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(70, 68, 81, .6);
+}

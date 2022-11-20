@@ -1,0 +1,11 @@
+.story__button-like {
+  grid-area: like;
+  background-image: url("../../../images/likeIcon.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 50%;
+  background-color: inherit;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}

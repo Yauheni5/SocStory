@@ -1,6 +1,7 @@
 @import url('../friend/__name/friend__name.css');
 @import url('../friend/__avatar/friend__avatar.css');
 @import url('../friend/__letter/friend__letter.css');
+@import url('../friend/__location/friend__location.css');
 
 .friend {
   width: 200px;

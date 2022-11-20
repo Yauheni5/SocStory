@@ -14,10 +14,11 @@
 
 @import url('../src/blocks/friend/friend.css');
 
+@import url('../src/blocks/story/story.css');
+
 /* p,
 a,
 div,
 img {
   border: 1px red solid;
-}
- */
+} */

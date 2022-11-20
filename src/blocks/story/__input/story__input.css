@@ -1,0 +1,6 @@
+.story__input {
+  grid-area: comment;
+  width: 100%;
+  min-height: 50px;
+  border: none;
+}

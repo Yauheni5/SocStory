@@ -16,6 +16,9 @@
 
 @import url('../src/blocks/story/story.css');
 
+@import url('../src/blocks/popup/popup.css');
+@import url('../src/blocks/popup/_active/popup_active.css');
+
 /* p,
 a,
 div,

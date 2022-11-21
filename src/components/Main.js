@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link, Route } from "react-router-dom";
 import Stories from "./Stories";
 import Users from "./Users";
 import { currentlyTime } from "../utils/constants"
 
-export default function Main({ dataUser, usersArray }) {
+export default function Main({ dataUser, usersArray, onClickEditProfile }) {
   const [statusText, setStatusText] = useState("");
   const [isStatusInput, setIsStatusInput] = useState(false);
 
@@ -45,11 +44,12 @@ export default function Main({ dataUser, usersArray }) {
         alt={userAvatarData.alt}
         className="user__avatar"
       />
-      <Route>
-        <Link to="edit-profile" className="user__button user__edit">
+        <button
+          className="user__button user__edit"
+          onClick={onClickEditProfile}
+        >
           Edit profile
-        </Link>
-      </Route>
+        </button>
       <h1 className="user__name">
         {dataUser.firstName} {dataUser.lastName}
       </h1>
@@ -65,7 +65,7 @@ export default function Main({ dataUser, usersArray }) {
       <div className="user__about">
         <p className="user__paragraph user__age">Age:</p>
         <p className="user__paragraph user__job">Job:</p>
-        <p className="user__paragraph user__hobby">About:</p>
+        <p className="user__paragraph user__hobby">Hobby:</p>
       </div>
       <Stories currentlyTime={currentlyTime} userAvatarData={userAvatarData}/>
       <Users usersArray={usersArray} />

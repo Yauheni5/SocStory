@@ -1,9 +1,9 @@
 .user__edit {
   display: grid;
   grid-area: edit;
-  text-decoration: none;
   color: black;
   text-align: center;
+  background-color: inherit;
   margin-top: 10px;
   font-size: 20px;
   padding: 5px;

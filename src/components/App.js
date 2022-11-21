@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "../index.css";
 import Main from "./Main";
-import Users from "./Users";
 import Header from "./Header";
+import PopupWithEditForm from "./PopupWithEditForm";
 
 function App() {
   const [user, setUser] = useState({ firstName: "Andrey", lastName: "Ivanov" });
   const [usersArray, setUsersArray] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
 
   function getNewUsersData() {
     fetch("https://randomuser.me/api/?results=10")
@@ -35,6 +36,14 @@ function App() {
         })
       );
   }
+  function handleClickEditProfile(){
+    setIsOpen(true);
+    console.log('open')
+  }
+
+  function handleClosePopup () {
+    setIsOpen(false);
+  }
 
   useEffect(() => {
     getNewUsersData();
@@ -44,8 +53,8 @@ function App() {
     <div className="body">
       <div className="page">
         <Header />
-        <Main dataUser={user} usersArray={usersArray}/>
-
+        <Main dataUser={user} usersArray={usersArray} onClickEditProfile={handleClickEditProfile}/>
+        <PopupWithEditForm isOpen={isOpen} closePopup={handleClosePopup}/>
       </div>
     </div>
   );

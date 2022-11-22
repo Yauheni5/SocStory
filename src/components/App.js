@@ -5,7 +5,13 @@ import Header from "./Header";
 import PopupWithEditForm from "./PopupWithEditForm";
 
 function App() {
-  const [user, setUser] = useState({ firstName: "Andrey", lastName: "Ivanov" });
+  const [user, setUser] = useState({
+    'user-name': "Andrey",
+    'user-avatar': "https://www.shutterstock.com/image-vector/human-being-individuality-personality-psychologic-600w-2124301607.jpg",
+    'user-age': 123,
+    'user-job': 'Frontend Developer',
+    'user-hobby': 'football'
+   });
   const [usersArray, setUsersArray] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,12 +44,18 @@ function App() {
   }
   function handleClickEditProfile(){
     setIsOpen(true);
-    console.log('open')
   }
 
   function handleClosePopup () {
     setIsOpen(false);
   }
+
+  const handleChangeInput = (event) => {
+    setUser((data) => ({
+      ...data,
+      [event.target.name]: event.target.value,
+    }));
+  };
 
   useEffect(() => {
     getNewUsersData();
@@ -54,7 +66,7 @@ function App() {
       <div className="page">
         <Header />
         <Main dataUser={user} usersArray={usersArray} onClickEditProfile={handleClickEditProfile}/>
-        <PopupWithEditForm isOpen={isOpen} closePopup={handleClosePopup}/>
+        <PopupWithEditForm isOpen={isOpen} userInfo={user} handleChangeInput={handleChangeInput} closePopup={handleClosePopup} onSubmitEditProfile={handleClosePopup}/>
       </div>
     </div>
   );

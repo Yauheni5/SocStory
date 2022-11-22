@@ -2,13 +2,15 @@
   font-style: italic;
   padding-left: 18px;
   width: 90%;
-  max-height: 50px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-x: scroll;
   resize: none;
 }
 
 .user__status-text:disabled {
   border: none;
   background-color: inherit;
+}
+
+.user__status-text::-webkit-scrollbar {
+  width: 1px;
 }

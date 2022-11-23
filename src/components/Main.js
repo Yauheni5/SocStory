@@ -38,8 +38,6 @@ export default function Main({ dataUser, usersArray, onClickEditProfile }) {
     }
   }
 
-
-
   return (
     <main className="user">
       <img

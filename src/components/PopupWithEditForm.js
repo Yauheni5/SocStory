@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function PopupWithEditForm({
   isOpen,
   closePopup,
@@ -7,8 +5,6 @@ export default function PopupWithEditForm({
   onSubmitEditProfile,
   userInfo,
 }) {
-  const [dataUser, setValues] = useState(userInfo);
-
   function handleSubmitForm(e) {
     e.preventDefault();
     onSubmitEditProfile();
@@ -74,7 +70,7 @@ export default function PopupWithEditForm({
           className="popup__input popup__input_user-hobby"
           name="user-hobby"
           placeholder="input hobby"
-          handleChangeInput={handleChangeInput}
+          onChange={handleChangeInput}
           value={userInfo["user-hobby"] || ""}
         />
         <button

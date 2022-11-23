@@ -1,0 +1,16 @@
+.story__text_edit {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  min-height: 200px;
+  box-shadow: 50px 50px 50px 50px rgba(70, 68, 81, 1);
+}
+
+.story__text_edit:disabled {
+  border: none;
+  background-color: inherit;
+}
+
+.story__text_edit::-webkit-scrollbar {
+  width: 0;
+}

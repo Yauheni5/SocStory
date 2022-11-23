@@ -1,21 +1,32 @@
 # [SocStory](https://yauheni5.github.io/SocStory/)
 
-## Free time project
+<div>
+  <h2>Free time project</h2>
+  <a href="https://yauheni5.github.io/SocStory/">Link to deploy: SocStory</a>
+</div>
 
-### `used`
 
-> React.js,
-> api (for get random users),
-> forms(for edit profile, story),
-> BEM
+<div>
+  <ul>
+    <h2>used</h2>
+    <li>React.js</li>
+    <li>api (for get random users)</li>
+    <li>forms(for edit profile, story)</li>
+    <li>BEM</li>
+  </ul>
+</div>
 
-### `plan to add`
+<div>
+  <ul>
+    <h2>plan to add</h2>
+    <li>add functional</li>
+    <li>add/remove friends</li>
+    <li>add/remove photo-gallery</li>
+    <li>...</li>
+  </ul>
+</div>
 
-> registration/authorization,
-> add functional:
->
-> > add/remove friends,
-> > add/remove photo-gallery.
+
 
 # Getting Started with Create React App
 

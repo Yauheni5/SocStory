@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/project/static/css/main.a7f4cd00.css",
-    "main.js": "/project/static/js/main.687c29fb.js",
-    "static/js/787.ec704a7a.chunk.js": "/project/static/js/787.ec704a7a.chunk.js",
-    "static/media/logoSocStory.png": "/project/static/media/logoSocStory.d0f76ab1a6237387434a.png",
-    "static/media/pencil.svg": "/project/static/media/pencil.066b83c066aca090b8c4.svg",
-    "static/media/likeIcon.svg": "/project/static/media/likeIcon.d155ad62d32b51ba3d46.svg",
-    "static/media/deleteIcon.svg": "/project/static/media/deleteIcon.8a554a830c70c649c95d.svg",
-    "static/media/likeIcon-active.svg": "/project/static/media/likeIcon-active.86aebcb7f8c3ee4b001b.svg",
-    "index.html": "/project/index.html",
-    "static/media/okIcon.svg": "/project/static/media/okIcon.a6193360bdb9ac7f406c.svg",
-    "static/media/replyIcon.svg": "/project/static/media/replyIcon.6037f6b09e18e5f871b4.svg",
-    "main.a7f4cd00.css.map": "/project/static/css/main.a7f4cd00.css.map",
-    "main.687c29fb.js.map": "/project/static/js/main.687c29fb.js.map",
-    "787.ec704a7a.chunk.js.map": "/project/static/js/787.ec704a7a.chunk.js.map"
+    "main.css": "/SocStory/static/css/main.d4cec3b0.css",
+    "main.js": "/SocStory/static/js/main.06d24c85.js",
+    "static/js/787.f05a00f4.chunk.js": "/SocStory/static/js/787.f05a00f4.chunk.js",
+    "static/media/logoSocStory.png": "/SocStory/static/media/logoSocStory.d0f76ab1a6237387434a.png",
+    "static/media/pencil.svg": "/SocStory/static/media/pencil.066b83c066aca090b8c4.svg",
+    "static/media/likeIcon.svg": "/SocStory/static/media/likeIcon.d155ad62d32b51ba3d46.svg",
+    "static/media/deleteIcon.svg": "/SocStory/static/media/deleteIcon.8a554a830c70c649c95d.svg",
+    "static/media/likeIcon-active.svg": "/SocStory/static/media/likeIcon-active.86aebcb7f8c3ee4b001b.svg",
+    "index.html": "/SocStory/index.html",
+    "static/media/okIcon.svg": "/SocStory/static/media/okIcon.a6193360bdb9ac7f406c.svg",
+    "static/media/replyIcon.svg": "/SocStory/static/media/replyIcon.6037f6b09e18e5f871b4.svg",
+    "main.d4cec3b0.css.map": "/SocStory/static/css/main.d4cec3b0.css.map",
+    "main.06d24c85.js.map": "/SocStory/static/js/main.06d24c85.js.map",
+    "787.f05a00f4.chunk.js.map": "/SocStory/static/js/787.f05a00f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7f4cd00.css",
-    "static/js/main.687c29fb.js"
+    "static/css/main.d4cec3b0.css",
+    "static/js/main.06d24c85.js"
   ]
 }

@@ -1,3 +1,19 @@
+# [SocStory](https://yauheni5.github.io/SocStory/)
+
+## Free time project
+
+### `used`
+
+> React.js
+> api (for get random users)
+> forms(for edit profile, story)
+> BEM
+
+### `plan to add`
+
+> registration/authorization
+> add functional add/remove friends
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

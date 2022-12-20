@@ -39,7 +39,6 @@ export default function Story({currentlyTime, userAvatarData}) {
   function handleClickEditStory(e) {
     const buttonEditNode = e.target;
     const articleEditable = buttonEditNode.parentNode;
-    console.log(buttonEditNode, articleEditable)
     if (buttonEditNode.classList.contains('story__button-edit_active')) {
       editStory(buttonEditNode, articleEditable);
     } else {
@@ -47,9 +46,15 @@ export default function Story({currentlyTime, userAvatarData}) {
     }
   }
 
+  function handleRemoveStory(e) {
+    const buttonDeleteStiry = e.target;
+    const articleEditable = buttonDeleteStiry.parentNode;
+    articleEditable.querySelector('.story__text').remove();
+  }
+
   return (
     <article className="story user__story">
-      <button className="user__button story__button-delete"/>
+      <button className="user__button story__button-delete" onClick={handleRemoveStory}/>
       <button
         className="user__button user__button-edit user__button-edit_story story__button-edit"
         onClick={handleClickEditStory}

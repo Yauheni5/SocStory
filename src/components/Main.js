@@ -68,7 +68,7 @@ export default function Main({ dataUser, usersArray, onClickEditProfile }) {
         <p className="user__paragraph user__job">Job: {dataUser['user-job']}</p>
         <p className="user__paragraph user__hobby">Hobby: {dataUser['user-hobby']}</p>
       </div>
-      <Stories currentlyTime={currentlyTime} userAvatarData={userAvatarData}/>
+      <Stories currentlyTime={currentlyTime} userAvatarData={userAvatarData} />
       <Users usersArray={usersArray} />
     </main>
   );

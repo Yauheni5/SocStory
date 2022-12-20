@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Story({currentlyTime, userAvatarData}) {
   const [counterLike, setConterLike] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
+  const [textStory, setTextStory] = useState("Text story");
 
   function handleClickLike(e){
     if (isLiked) {
@@ -15,29 +16,38 @@ export default function Story({currentlyTime, userAvatarData}) {
     setIsLiked(!isLiked);
   }
 
+  function editStory(buttonEditNode, articleEditable) {
+    buttonEditNode.classList.remove("story__button-edit_active");
+    let textAreaActive = articleEditable.querySelector('.story__text_edit')
+    let textEditable = document.createElement('p');
+    textEditable.classList.add('story__text');
+    textEditable.textContent = textAreaActive.value;
+    setTextStory(textAreaActive.value);
+    textAreaActive.replaceWith(textEditable);
+  }
+
+  function saveEditableStory(buttonEditNode, articleEditable) {
+    let textEditable = articleEditable.querySelector('.story__text')
+    buttonEditNode.classList.add("story__button-edit_active");
+    let textAreaActive = document.createElement("textarea");
+    textAreaActive.classList.add('story__text');
+    textAreaActive.classList.add('story__text_edit');
+    textAreaActive.textContent = textEditable.textContent;
+    textEditable.replaceWith(textAreaActive);
+  }
+
   function handleClickEditStory(e) {
     const buttonEditNode = e.target;
     const articleEditable = buttonEditNode.parentNode;
-
+    console.log(buttonEditNode, articleEditable)
     if (buttonEditNode.classList.contains('story__button-edit_active')) {
-      buttonEditNode.classList.remove("story__button-edit_active");
-      let textAreaActive = articleEditable.querySelector('.story__text_edit')
-      let textEditable = document.createElement('p');
-      textEditable.classList.add('story__text');
-      textEditable.textContent = textAreaActive.textContent;
-      textAreaActive.replaceWith(textEditable);
+      editStory(buttonEditNode, articleEditable);
     } else {
-      let textEditable = articleEditable.querySelector('.story__text')
-      buttonEditNode.classList.add("story__button-edit_active");
-      let textAreaActive = document.createElement("textarea");
-      textAreaActive.classList.add('story__text');
-      textAreaActive.classList.add('story__text_edit');
-      textAreaActive.textContent = textEditable.textContent;
-      textEditable.replaceWith(textAreaActive);
+      saveEditableStory(buttonEditNode, articleEditable);
     }
   }
 
-
+  useEffect(()=>{},[textStory])
 
   return (
     <article className="story user__story">
@@ -54,9 +64,8 @@ export default function Story({currentlyTime, userAvatarData}) {
       />
       <p
         className="story__text"
-        disabled
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget pulvinar magna. Nunc et enim non ante sodales consequat. Nunc sollicitudin, massa eget mollis vulputate, justo turpis consequat mauris, et finibus magna diam sit amet nunc. Ut molestie nisl ut augue iaculis, sit amet feugiat neque malesuada. Sed sodales suscipit purus, hendrerit malesuada quam euismod a. Cras sed diam justo. Fusce eget efficitur nisi. Maecenas tincidunt ex eget mauris suscipit pulvinar.
+        {textStory}
       </p>
       <button
         className="user__button story__button-like"

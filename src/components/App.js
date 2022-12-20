@@ -65,8 +65,8 @@ function App() {
     <div className="body">
       <div className="page">
         <Header />
-        <Main dataUser={user} usersArray={usersArray} onClickEditProfile={handleClickEditProfile}/>
-        <PopupWithEditForm isOpen={isOpen} userInfo={user} handleChangeInput={handleChangeInput} closePopup={handleClosePopup} onSubmitEditProfile={handleClosePopup}/>
+        <Main dataUser={user} usersArray={usersArray} onClickEditProfile={handleClickEditProfile} />
+        <PopupWithEditForm isOpen={isOpen} userInfo={user} handleChangeInput={handleChangeInput} closePopup={handleClosePopup} onSubmitEditProfile={handleClosePopup} />
       </div>
     </div>
   );

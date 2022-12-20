@@ -47,8 +47,6 @@ export default function Story({currentlyTime, userAvatarData}) {
     }
   }
 
-  useEffect(()=>{},[textStory])
-
   return (
     <article className="story user__story">
       <button className="user__button story__button-delete"/>

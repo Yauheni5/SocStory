@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SocStory/static/css/main.d4cec3b0.css",
-    "main.js": "/SocStory/static/js/main.c55b4388.js",
+    "main.js": "/SocStory/static/js/main.3d31882b.js",
     "static/js/787.f05a00f4.chunk.js": "/SocStory/static/js/787.f05a00f4.chunk.js",
     "static/media/logoSocStory.png": "/SocStory/static/media/logoSocStory.d0f76ab1a6237387434a.png",
     "static/media/pencil.svg": "/SocStory/static/media/pencil.066b83c066aca090b8c4.svg",
@@ -12,11 +12,11 @@
     "static/media/okIcon.svg": "/SocStory/static/media/okIcon.a6193360bdb9ac7f406c.svg",
     "static/media/replyIcon.svg": "/SocStory/static/media/replyIcon.6037f6b09e18e5f871b4.svg",
     "main.d4cec3b0.css.map": "/SocStory/static/css/main.d4cec3b0.css.map",
-    "main.c55b4388.js.map": "/SocStory/static/js/main.c55b4388.js.map",
+    "main.3d31882b.js.map": "/SocStory/static/js/main.3d31882b.js.map",
     "787.f05a00f4.chunk.js.map": "/SocStory/static/js/787.f05a00f4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4cec3b0.css",
-    "static/js/main.c55b4388.js"
+    "static/js/main.3d31882b.js"
   ]
 }
